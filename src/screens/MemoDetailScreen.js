@@ -15,7 +15,7 @@ export default function MemoDetailScreen() {
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, obcaecati nulla adipisci, quis iusto suscipit delectus soluta ad voluptatum veritatis blanditiis placeat labore itaque? Alias eveniet harum voluptatum dignissimos doloremque.
         </Text>
       </ScrollView>
-      <CircleButton style={{top: 160, bottom: 'auto'}} name='edit-2' />
+      <CircleButton style={{top: 160, bottom: 'auto'}} name='pencil' />
     </View>
   )
 }
