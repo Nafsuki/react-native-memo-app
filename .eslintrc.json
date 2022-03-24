@@ -20,7 +20,7 @@
         "react"
     ],
     "rules": {
-        "plugin:react/jsx-runtime": "extends",
-        "no-use-before-define": 0
+        "plugin:react/jsx-runtime": "extends"
+        // "no-use-before-define": 0
     }
 }
