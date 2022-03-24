@@ -20,7 +20,8 @@
         "react"
     ],
     "rules": {
-        "plugin:react/jsx-runtime": "extends"
+        "plugin:react/jsx-runtime": "extends",
+        "react/prop-types": ["error", {"ignore": ["navitagion"] }]
         // "no-use-before-define": 0
     }
 }
