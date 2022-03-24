@@ -1,16 +1,21 @@
-import { string } from 'prop-types'
-import { View, StyleSheet, TextInput, Text } from 'react-native'
+import { string, func } from 'prop-types'
+import { View, StyleSheet, Text, TouchableOpacity } from 'react-native'
 
-export default function Button({ label }) {
+export default function Button({ label, onPress }) {
   return (
-    <View style={styles.buttonContainer}>
-      <Text style={styles.buttonLabel}>{label}</Text>
-    </View>
+    <TouchableOpacity style={styles.buttonContainer}>
+      <Text style={styles.buttonLabel} onPress={onPress}>{label}</Text>
+    </TouchableOpacity>
   )
 }
 
 Button.propTypes = {
   label: string.isRequired,
+  onPress: func,
+}
+
+Button.defaultProps = {
+  onPress: null,
 }
 
 const styles = StyleSheet.create({
